@@ -11,5 +11,7 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$
-Logarithms of different bases differ by a constant factor of log(a)/log(b)
-Using a log of base 5 instead of a log of base 2 means that for cf(n) using log base 2 it is the equivalent of saying logb2/logb5cf(n).
+
+Any two logarithms of different bases always differ by a constant factor when given the same value inside the parentheses.
+For example, a log(base 2)(x) is always a constant factor of approximately 1.5849618816667 times more than log(base 3)(X) for x > 1
+This means that 1.5849618816667(nlog(base3)(n)) is equivalent to writing nlog(base2)(n). Since the c value in big O 
