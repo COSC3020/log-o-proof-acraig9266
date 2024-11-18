@@ -17,6 +17,6 @@ might help with the notation for mathematical expressions.
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$
 
 Any two logarithms of different bases always differ by a constant factor when given the same value for the argument.
-For example, a log(base 2)(x) is always a constant factor of approximately (find new factor) times log(base 5)(X) for x > 1
+For example, a log(base 2)(x) is always a constant factor of approximately 2.32192809 times log(base 5)(X) for all x
 This means that 2.32192809(nlog(base3)(n)) is equivalent to writing nlog(base2)(n). Since the c value in big O is a constant that simply has to be greater than 0, we can multiply the c that satisifies big O for nlog(base2)(n) by 2.32192809 and the new value of c would then satisfy big O for nlog(base5)(n)). Since we can always multiply or divide c by a known factor to account for switching between different bases, the base of the log used in the big O can be left off since C can just be adjusted with the log base.
 
